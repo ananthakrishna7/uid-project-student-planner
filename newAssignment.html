@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Assignment</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="notification.css">
 </head>
 <div class="general">
 <form action="assignments.html" >
@@ -26,9 +27,29 @@
     <textarea name="description" id="description" cols="30" rows="10"></textarea>
     <br><br>
     <label for="due">Due Date</label><br>
+
+    <!-- Date field -->
     <input type="date" name="due" id="due">
     <input type="submit" name="submit" id="submit">
 
+    <!-- Notification -->
+    <div class="notif-red">
+        <div class="design-bar"></div>
+            <div class="notif-content">
+                <ion-icon name="skull"></ion-icon>
+                <span>Warning : Invalid date!</span>
+            </div>
+            <div class="remove-notif">
+                <ion-icon name="close"></ion-icon>
+            </div>
+    </div>
+
 </form>
+
+    <!-- Date validation -->
+    <script src="js/validateDate.js"></script>
+    <!-- Adding CDN for icons -->
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+
 </div>
 </html>
