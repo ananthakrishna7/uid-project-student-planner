@@ -1,0 +1,111 @@
+:root{
+    /* Successful - Green */
+    --light-green: #50d980;
+    --dark-green: #12b049;
+
+    /* Warning - Red */
+    --light-red: #e0636d;
+    --dark-red: #d10f1f;
+
+    /* Alert - Yellow */
+    --light-yellow: #fcc065;
+    --dark-yellow: #e08a09;
+}
+
+.notif-red{
+    width: 350px;
+    height: 70px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 6px;
+    animation: floatIn 4s ease forwards;
+}
+
+
+/* Red Notification */
+.notif-red .design-bar{
+    width: 3%;
+    height: inherit;
+    background: var(--dark-red);
+}
+
+.notif-red .notif-content{
+    width: 85%;
+    text-align: center;
+    background: var(--light-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notif-content ion-icon{
+    padding-right: 5px;
+    font-size: 1.5em;
+}
+
+.notif-red .remove-notif{
+    width: 12%;
+    background: var(--dark-red);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+/* Yellow Notification */
+.notif-yellow .design-bar{
+    width: 3%;
+    height: inherit;
+    background: var(--dark-yellow);
+}
+
+.notif-yellow .notif-content{
+    width: 85%;
+    text-align: center;
+    background: var(--light-yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notif-content ion-icon{
+    padding-right: 5px;
+    font-size: 1.5em;
+}
+
+.notif-yellow .remove-notif{
+    width: 12%;
+    background: var(--dark-yellow);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+
+/* Initially all notification boxes are not displayed */
+/* .notif-red{
+    display: none;
+} */
+
+@keyframes floatIn {
+    0%{
+        transform: translateX(110%);
+    }
+    10%{
+        transform: translateX(-5%);
+    }
+    50%{
+        transform: translateX(2.5%);
+    }
+    90%{
+        transform: translateX(-5%);
+    }
+    100%{
+        transform: translateX(110%);
+    }
+}
