@@ -1,1 +1,1 @@
-A course project for my course in User Interface Design.
+A course project for my course in User Interface Design. This project is archived.
