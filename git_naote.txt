@@ -1,1 +1,0 @@
-latest-22.06.2023 -> just removed "Right" from the animation for assignments. makse position: relative; for the images on the landing page
